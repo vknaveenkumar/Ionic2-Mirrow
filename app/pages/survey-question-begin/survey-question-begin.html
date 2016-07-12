@@ -1,0 +1,76 @@
+<ion-navbar  primary>
+    <img src="img/logo.jpg" width="70px" style="display:inline-block" height="40px" alt="***"/>
+    <ion-title  style="display:inline-block;padding-left:100px;" >MIRROW</ion-title>
+</ion-navbar>
+
+<ion-content class="detail">
+
+
+     <section id="top-header">
+        	<div class="container-fluid">
+                <div class="row">
+                	<div class="col-sm-12 col-xs-12">
+                 	<span>Step 2/2</span>
+                    </div>
+                </div>
+            </div>
+      </section>
+      <div id="stp2-question" ><!-- ng-controller="SurveyCtrl" -->
+        	<div class="container-fluid">
+            	<div class="row">
+                	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padd">
+                    	<form class="list">
+
+                    		 <ion-item >
+		  						{{question.The_question}}
+		 					</ion-item> 
+
+                            <ion-list *ngFor="let option of options">
+		                    
+		                    <ion-item [hidden]="plain == false">
+		                    <label class="item item-input">					
+							 <input type="text" placeholder="Type your answer here " [(ngModel)]="questionare.answer">
+							</label>
+		                   </ion-item>
+
+		                   <ion-item radio-group [hidden]="isoption == false" [(ngModel)]="questionare.radioanswer"> 
+		                  	 <ion-radio value="{{option.id}}"></ion-radio>
+		                  	 <ion-label>{{option.answer}}</ion-label>
+		                   </ion-item>
+
+		                   <ion-item *ngIf="imageoption == true">
+		                   <ion-radio value="{{option.id}}"></ion-radio>
+		                   <ion-label><img src="{{option.answer}}" width=120 height=120/></ion-label>
+		                   </ion-item>
+
+		                    <ion-item radio-group [hidden]="yes_no == false" [(ngModel)]="questionare.radioanswer"> 
+		                  	 <ion-radio value="{{option.id}}"></ion-radio>
+		                  	 <ion-label>{{option.answer}}</ion-label>
+		                    </ion-item>
+
+
+		                    <ion-item [hidden]="camera == false" > 
+		                    		<ion-item>
+										<span (click)="takePicture()">	Click here to Take a picture</span>
+				 					</ion-item>
+				 					 Latest Picture:
+     								 <img [src]="base64Image" *ngIf="base64Image" /> 
+				 					<!-- <ion-item >
+				  	 					<img id="myImage" width=200 height=200/>
+				  					</ion-item> -->
+                            </ion-item>
+		                    
+		                    </ion-list>
+		    			 </form>
+			
+
+			<ion-item>
+		  	 <button (click)="NextQuestion()">Next</button>			 			 	 			 
+		    </ion-item>
+		  	
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+</ion-content>

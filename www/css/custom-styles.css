@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/* CSS Document */
+.switch-wrapper {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+section#mode-content {
+    background: #000 none repeat scroll 0 0;
+    padding: 14px 0;
+}
+.mode1 img{background-size:cover; background-position:center center;}
+.mode1 {
+     background: #cccec9 none repeat scroll 0 0;
+    height: 200px !important;
+    margin-bottom: 30px;
+    padding: 40px 10px;
+    text-align: center;
+}
+.mode1 h4 {
+    font-weight: 400;
+    margin: 20px 0;
+}
+section#top-header {
+     background: #000 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 0;
+    text-align: center;
+}
+#top-header i.fa-angle-left {
+    font-size: 20px;
+    font-weight: 800;
+    margin-right: 5px;
+}
+.r-header {
+     background: #ececf2 none repeat scroll 0 0;
+    padding: 12px 0;
+    text-transform: uppercase;
+	color:#909095;
+}
+.rt-list ul {
+    padding: 0;
+}
+.rt-list ul li {
+    font-size: 16px;
+    list-style: outside none none;
+    padding: 12px 15px;
+	 border: 1px solid #dad9de;
+	}
+.rt-list a {
+    color: #000;
+}
+.rt-list a:hover{
+	text-decoration:none;
+}
+.rt-list ul a li i {
+    color: #babac0;
+    float: right;
+    font-size: 18px;
+}
+.rt-list ul li.even {
+    background: #d2d2d2 none repeat scroll 0 0;
+}
+
+.rt-store ul {
+    padding: 0;
+}
+.rt-store ul li {
+    border: 1px solid #dad9de;
+    font-size: 15px;
+    list-style: outside none none;
+    padding: 5px 15px;
+}
+.rt-store a {
+    color: #000;
+}
+.rt-store a:hover{
+	text-decoration:none;
+}
+.rt-store ul a li i {
+    color: #babac0;
+    float: right;
+    font-size: 18px;
+	/*line-height:0px;*/
+}
+.rt-store ul li.even {
+    background: #fff none repeat scroll 0 0;
+}
+.rt-store ul li.odd {
+    background: #e7e7e8 none repeat scroll 0 0;
+    padding: 3px 15px;
+}
+.rt-store ul li.dark {
+    background: #cdcfcf none repeat scroll 0 0;
+}
+section#rt-store-foot {
+    background: #000 none repeat scroll 0 0;
+    padding: 10px 0;
+	text-align:center;
+}
+#rt-store-foot ul {
+    padding: 0;
+	margin-bottom:0px;
+}
+#rt-store-foot ul li {
+    display: inline;
+    font-size: 26px;
+    line-height: 0;
+    list-style: outside none none;
+    margin: 0 35px;
+}
+#rt-store-foot a {
+    color: #fff;
+    line-height: 40px;
+    margin: 7px 0 0;
+}
+#rt-store-foot a:hover{
+	text-decoration:none;
+}
+#rt-store-foot ul li:last-child a {
+    color: #464646;
+}
+.no-padd{padding:0px !important;}
+section#store-cat {
+    background: #000 none repeat scroll 0 0;
+}
+#store-cat h4 {
+    border-top: 1px solid #333333;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    padding: 16px 15px;
+}
+#store-cat img {
+    margin-right: 10px;
+}
+
+#store-cat .mode1 h4 {
+
+    border-top: medium none;
+    color: #000;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+    padding: 0;
+}
+.stp2-flag i {
+    font-size: 22px;
+}
+#stp2-question {
+    background: #008dd2 none repeat scroll 0 0;
+    padding: 0 0 20px 0px;
+}
+.quest1{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3f3f2+0,d5d5d6+50,abaaab+100 */
+
+background: #f3f3f2; /* Old browsers */
+
+background: -moz-linear-gradient(top,  #f3f3f2 0%, #d5d5d6 50%, #abaaab 100%); /* FF3.6-15 */
+
+background: -webkit-linear-gradient(top,  #f3f3f2 0%,#d5d5d6 50%,#abaaab 100%); /* Chrome10-25,Safari5.1-6 */
+
+background: linear-gradient(to bottom,  #f3f3f2 0%,#d5d5d6 50%,#abaaab 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f2', endColorstr='#abaaab',GradientType=0 ); /* IE6-9 */
+font-size: 20px;
+font-weight: 500;
+padding: 5px 10px;
+text-align: center;
+  border-bottom: 2px solid #000;
+}
+
+.quest1-ar a i {
+    color: #000;
+    cursor: pointer;
+    font-size: 40px;
+    margin-left: 12px;
+}
+.quest2-ar a i {
+    color: #000;
+    cursor: pointer;
+    font-size: 40px;
+    margin-left: 2px;
+}
+.quest1-ans {
+    background: #eeeeee none repeat scroll 0 0;
+    padding:5px;
+}
+.quest1-ans > p {
+    border: 1px solid #a3a3a3;
+    padding: 12px 5px;
+	margin-bottom:0px;
+}
+#add-location{text-align:center;}
+#add-location button {
+    border: medium none;
+    color: #008dd2;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 6px 0;
+	background:none;
+}
+#add-location button i {
+    color: #000;
+    font-size: 30px;
+}
+#add-loc-lang{
+	border: 1px solid #a3a3a3;
+    padding: 8px;
+}
+td.minus-cir {
+    border: medium none !important;
+    text-align: center;
+}
+#map-img{margin:5px 0;}
+ul.sel-lis {
+    border: 1px solid #a3a3a3;
+    margin: 5px 0;
+    padding: 12px 5px;
+}
+ul.sel-lis li {
+    border-bottom: 1px solid #a3a3a3;
+    list-style: outside none none;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+	cursor:pointer;
+}
+ul.sel-lis li:last-child{border:none;}
+ul.sel-lis li.selected{
+	color:#008DD2;
+	}
+#add-cir-btn {
+    margin: 10px 0;
+}
+#add-cir-btn input {
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+    padding: 5px 4px;
+    width: 97%;
+	background:#ececec;
+}
+#add-cir-btn button {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: #008dd2;
+    cursor: pointer;
+    font-size: 24px;
+}	

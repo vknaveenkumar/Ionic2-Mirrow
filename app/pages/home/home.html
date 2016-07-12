@@ -1,0 +1,64 @@
+<ion-navbar *navbar primary>
+    <img src="img/logo.jpg" width="70px" style="display:inline-block" height="40px" alt="***"/>
+    <ion-title  style="display:inline-block;padding-left:100px;" >MIRROW</ion-title>
+</ion-navbar>
+
+<br>
+<br>
+
+<ion-content class="login" style="text-align: center;">
+
+        
+    <img src="img/logo.svg" height="100px"  width="100px" alt="Geppetto">
+
+
+    <div padding>
+          <ion-segment [(ngModel)]="authType">
+          <ion-segment-button value="login">
+            Login
+          </ion-segment-button>
+          <ion-segment-button value="signup">
+            Signup
+          </ion-segment-button>
+        </ion-segment>
+    </div>
+
+     <div [ngSwitch]="authType">
+        
+        <form *ngSwitchWhen="'login'" #loginCreds="ngForm" (ngSubmit)="login(loginCreds.value)">
+          
+          <ion-item>
+            
+            <ion-input type="text" placeholder="Username" ngControl="username"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            
+            <ion-input type="password" placeholder="Password" ngControl="password"></ion-input>
+          </ion-item>
+
+          <div padding>
+            <button block primary type="submit">Login</button>        
+          </div>
+
+        </form>
+
+        <form *ngSwitchWhen="'signup'" #signupCreds="ngForm" (ngSubmit)="signup(signupCreds.value)">
+          <ion-item>
+            <ion-input type="text" placeholder="Username" ngControl="username"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-input type="password" placeholder="Password" ngControl="password"></ion-input>
+          </ion-item>
+
+          <div padding>
+            <button block  type="submit">Create an account</button>
+          </div>
+
+        </form>
+      </div>
+
+<ion-content>
+
+

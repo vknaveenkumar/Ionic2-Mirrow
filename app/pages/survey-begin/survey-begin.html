@@ -1,0 +1,39 @@
+<ion-navbar  primary>
+    <img src="img/logo.jpg" width="70px" style="display:inline-block" height="40px" alt="***"/>
+    <ion-title  style="display:inline-block;padding-left:100px;" >MIRROW</ion-title>
+</ion-navbar>
+
+<ion-content class="detail">
+  
+		<section id="top-header">
+        	<div class="container-fluid">
+                <div class="row">
+                	<div class="col-sm-12 col-xs-12">
+                 	<span>Step 1/2</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         
+         <section id="routes-content">
+
+
+         	<div class="r-header">
+            	<div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                        	<span style="text-transform: none;color:#000;font-size:14px;">Carefour City 23  Rue des leombards 7500 franceparis</span>
+                        </div>
+                     </div>
+                </div>    
+            </div>
+         
+         <ion-list>   
+         	<ion-item *ngFor="let survey of surveyTitleList">          
+         	<div (click)="selectedSurveyName(survey)">{{survey.Survey_name}}</div>
+         	</ion-item>
+         </ion-list>
+         </section>
+
+</ion-content>

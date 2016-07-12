@@ -1,0 +1,75 @@
+<ion-navbar *navbar primary>
+    <img src="img/logo.jpg" width="70px" style="display:inline-block" height="40px" alt="***"/>
+    <ion-title  style="display:inline-block;padding-left:100px;" >MIRROW</ion-title>
+</ion-navbar>
+
+<ion-content class="profiles">
+
+<!-- <div class="col-sm-12 col-xs-12">
+      <ion-item>
+      <ion-label>Select Connection Mode :</ion-label>
+      <ion-toggle energized></ion-toggle>
+      </ion-item>                          
+</div> -->
+
+
+  <section id="selection-mode">
+          <div class="container-fluid">
+                <div class="row">
+                    
+                    <div class="col-sm-12 col-xs-12">
+               
+               <ion-item>
+               <ion-label>Select Connection Mode :</ion-label>
+               <ion-toggle></ion-toggle>
+               </ion-item>  
+                    
+                    </div>
+                
+                </div>  
+            </div>
+        </section>
+ 
+<!-- <nav>
+    <a [routerLink]="['/d']">Crisis Center</a>
+</nav>
+<router-outlet></router-outlet> -->
+<!-- <button style="background: url(img/logo.svg);background-repeat: no-repeat;" height="100" width="100"></button>  -->
+
+<section id="mode-content">
+          <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6" (click)="start()">
+                      <div class="mode1">
+                      <!-- <a href="#/choose-route" class="button button-clear button-positive"> -->
+                          <img src="img/start-mode.jpg" alt=""/>
+                            <h4>Start</h4>
+                            <!-- </a> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                      <div class="mode1">
+                          <img src="img/msg-mode.jpg" alt=""/>
+                            <h4>Outbox</h4>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                      <div class="mode1">
+                          <img src="img/info-mode.jpg" alt=""/>
+                            <h4>Setting</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                      <div class="mode1">
+                          <img src="img/set-mode.jpg" alt=""/>
+                            <h4>Setting</h4>
+                        </div>
+                    </div>
+                 </div>
+             </div>       
+</section>
+
+ 
+</ion-content>

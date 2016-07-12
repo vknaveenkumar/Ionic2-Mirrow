@@ -1,0 +1,51 @@
+<ion-navbar *navbar primary>
+    <img src="img/logo.jpg" width="70px" style="display:inline-block" height="40px" alt="***"/>
+    <ion-title  style="display:inline-block;padding-left:100px;" >MIRROW</ion-title>
+</ion-navbar>
+
+<ion-content class="detail">
+
+ <section id="routes-content">
+        	<div class="r-header">
+            	<div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                        	Select a Route
+                        </div>
+                     </div>
+                </div>    
+            </div>
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 no-padd">
+                            <div class="rt-list">
+                                <ul>
+                               
+                                 <li class="even">
+                                       
+                            		<ion-list>   
+                               			<ion-item >         
+                                        All Routes
+                                		</ion-item>
+                                    </ion-list>    
+		                        	
+                                     <ion-list>	
+                                        <ion-item *ngFor="let route of routeList">
+                                         <!-- <div (click)="selectedRoute(route.location)">{{route.route_name}}</div> -->
+                                        <div (click)="selectedRoute(route.location)">{{route.routeName}}</div>
+                                        </ion-item>
+                                     </ion-list>
+		                            
+                                  </li>
+                                   
+                                </ul>
+                              
+                            </div>
+                       </div>
+                    </div>
+                </div>            
+        </section>
+
+
+  
+</ion-content>
